@@ -7,8 +7,9 @@
 <body>
     <h2>Details</h2>
     <hr />
-    @Html.DisplayNameFor(model => model.City): @Html.DisplayFor(model => model.City), @Html.DisplayNameFor(model => model.Country): @Html.DisplayFor(model => model.Country);;
-    @Html.DisplayNameFor(model => model.Description): @Html.DisplayFor(model => model.Description);
+    <p><strong>@Html.DisplayNameFor(model => model.City):</strong> @Html.DisplayFor(model => model.City)</p>
+     <p><strong>@Html.DisplayNameFor(model => model.Country):</strong> @Html.DisplayFor(model => model.Country)</p>
+    <p><strong>@Html.DisplayNameFor(model => model.Description): </strong>@Html.DisplayFor(model => model.Description)</p>
 
     <p>@Html.ActionLink("Back to Places list", "Index")</p>
 </body>
