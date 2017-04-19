@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TravelBlog.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 
 namespace TravelBlog.Controllers
@@ -18,7 +20,7 @@ namespace TravelBlog.Controllers
 
         public IActionResult Details (int id)
         {
-            var thisExperience = db.Experiences.FirstOrDefault(experiences => experiences.ExperienceId == id);
+            var thisExperience = db.Experiences.Include(experiences => experiences.Place).FirstOrDefault(experiences => experiences.ExperienceId == id);
             return View(thisExperience);
         }
     }

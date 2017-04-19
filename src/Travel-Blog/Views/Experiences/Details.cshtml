@@ -8,6 +8,7 @@
     <h2>Details</h2>
     <hr />
     <p><strong>@Html.DisplayNameFor(model => model.Description):</strong> @Html.DisplayFor(model => model.Description)</p>
+    <p><strong>Place:</strong> @Model.Place.City, @Model.Place.Country</p>
 
     <p>@Html.ActionLink("Back to Experience list", "Index")</p>
 </body>
