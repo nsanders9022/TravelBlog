@@ -164,6 +164,8 @@ C:\Users\epicodus\desktop\Travel-Blog\src\Travel-Blog\Program.cs
 C:\Users\epicodus\desktop\Travel-Blog\src\Travel-Blog\Startup.cs
 C:\Users\epicodus\desktop\Travel-Blog\src\Travel-Blog\Migrations\20170419174822_Initial.cs
 C:\Users\epicodus\desktop\Travel-Blog\src\Travel-Blog\Migrations\20170419174822_Initial.Designer.cs
+C:\Users\epicodus\desktop\Travel-Blog\src\Travel-Blog\Migrations\20170419180353_MakeTableNamesPlural.cs
+C:\Users\epicodus\desktop\Travel-Blog\src\Travel-Blog\Migrations\20170419180353_MakeTableNamesPlural.Designer.cs
 C:\Users\epicodus\desktop\Travel-Blog\src\Travel-Blog\Migrations\TravelDbContextModelSnapshot.cs
 C:\Users\epicodus\desktop\Travel-Blog\src\Travel-Blog\Models\Experience.cs
 C:\Users\epicodus\desktop\Travel-Blog\src\Travel-Blog\Models\ExperiencePeople.cs
