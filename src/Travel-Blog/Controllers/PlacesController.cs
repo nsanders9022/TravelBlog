@@ -36,5 +36,19 @@ namespace TravelBlog.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public IActionResult Edit(int id)
+        {
+            var thisPlace = db.Places.FirstOrDefault(places => places.PlaceId == id);
+            return View(thisPlace);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Place place)
+        {
+            db.Entry(place).State = EntityState.Modified;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
