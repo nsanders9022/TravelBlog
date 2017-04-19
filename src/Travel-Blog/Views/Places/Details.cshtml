@@ -10,7 +10,14 @@
     <p><strong>@Html.DisplayNameFor(model => model.City):</strong> @Html.DisplayFor(model => model.City)</p>
      <p><strong>@Html.DisplayNameFor(model => model.Country):</strong> @Html.DisplayFor(model => model.Country)</p>
     <p><strong>@Html.DisplayNameFor(model => model.Description): </strong>@Html.DisplayFor(model => model.Description)</p>
+    <p><strong>Experiences</strong></p>
+    @foreach (var experience in Model.Experiences)
+    {
+        <li>@experience.Description</li>
+
+    }
 
     <p>@Html.ActionLink("Back to Places list", "Index")</p>
+
 </body>
 </html>

@@ -10,6 +10,11 @@ namespace TravelBlog.Models
     [Table("Places")]
     public class Place
     {
+        public Place()
+        {
+            this.Experiences = new HashSet<Experience>();
+        }
+
         [Key]
         public int PlaceId { get; set; }
         public string City { get; set; }
