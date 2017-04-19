@@ -193,6 +193,7 @@
 -resource:"C:\Users\epicodus\Desktop\Travel-Blog\src\Travel-Blog\obj\Debug\netcoreapp1.0\Travel-Blogdotnet-compile.deps.json",Travel-Blog.deps.json
 "C:\Users\epicodus\Desktop\Travel-Blog\src\Travel-Blog\Program.cs"
 "C:\Users\epicodus\Desktop\Travel-Blog\src\Travel-Blog\Startup.cs"
+"C:\Users\epicodus\Desktop\Travel-Blog\src\Travel-Blog\Controllers\Experiences.cs"
 "C:\Users\epicodus\Desktop\Travel-Blog\src\Travel-Blog\Controllers\HomeController.cs"
 "C:\Users\epicodus\Desktop\Travel-Blog\src\Travel-Blog\Controllers\PeoplesController.cs"
 "C:\Users\epicodus\Desktop\Travel-Blog\src\Travel-Blog\Controllers\PlacesController.cs"

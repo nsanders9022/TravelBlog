@@ -1,0 +1,18 @@
+﻿@model IEnumerable<TravelBlog.Models.Experience>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Trabel Blog</title>
+</head>
+<body>
+    <h2>Travel Blog Experiences</h2>
+    <h4>Experiences</h4>
+    <ul>
+        @foreach (var listExperience in Model)
+        {
+            <li>@Html.DisplayFor(modelExperience => listExperience.Description)</li>
+
+        }
+    </ul>
+</body>
+</html>
