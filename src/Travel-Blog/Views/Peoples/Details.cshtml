@@ -9,6 +9,11 @@
     <hr />
     <p><strong>@Html.DisplayNameFor(model => model.Name):</strong> @Html.DisplayFor(model => model.Name)</p>
 
+    @foreach (var experiencesPeople in Model.ExperiencesPeoples)
+    {
+        <p>@experiencesPeople.Experience.Description</p>
+    }
+
     <p>@Html.ActionLink("Back to People list", "Index")</p>
 </body>
 </html>

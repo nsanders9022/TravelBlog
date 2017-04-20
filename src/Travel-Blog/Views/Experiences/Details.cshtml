@@ -12,7 +12,7 @@
 
     @foreach (var experiencesPeople in Model.ExperiencesPeoples)
     {
-        <p>@experiencesPeople.People.Name</p>
+        <p>@Html.ActionLink((string)@experiencesPeople.People.Name, "Details", "Peoples", new { id = experiencesPeople.PeopleId })</p>
 
     }
     <p>@Html.ActionLink("Back to Experience list", "Index")</p>

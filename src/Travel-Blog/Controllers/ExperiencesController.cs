@@ -26,7 +26,6 @@ namespace TravelBlog.Controllers
                 .ThenInclude(experiencesPeoples => experiencesPeoples.People)
                 .Where(experience => experience.ExperienceId == id).ToList();
                 
-
             return View(thisExperience);
         }
         public IActionResult Create()
