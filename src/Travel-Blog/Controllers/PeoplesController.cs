@@ -23,15 +23,14 @@ namespace TravelBlog.Controllers
             ViewBag.Experience = db.Peoples
                 .Include(people => people.ExperiencesPeoples)
                 .ThenInclude(experiencesPeoples => experiencesPeoples.Experience)
-                 .ThenInclude(experience => experience.Place)
-                 //.ThenInclude(place => place.City)
-
+                .ThenInclude(experience => experience.Place)
                 .Where(people => people.PeopleId == id).ToList();
          
             return View(thisPeople);
         }
         public IActionResult Create()
         {
+           
             return View();
         }
         [HttpPost]
