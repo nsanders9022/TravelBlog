@@ -23,5 +23,44 @@ namespace TravelBlog.Controllers
             var thisExperience = db.Experiences.Include(experiences => experiences.Place).FirstOrDefault(experiences => experiences.ExperienceId == id);
             return View(thisExperience);
         }
+        public IActionResult Create()
+        {
+            ViewBag.PlaceId = new SelectList(db.Places, "PlaceId", "City");
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Create(Experience experience)
+        {
+            db.Experiences.Add(experience);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public IActionResult Edit(int id)
+        {
+            var thisExperience = db.Experiences.FirstOrDefault(experiences => experiences.ExperienceId == id);
+            ViewBag.PlaceId = new SelectList(db.Places, "PlaceId", "City");
+            return View(thisExperience);
+        }
+        [HttpPost]
+        public IActionResult Edit(Experience experience)
+        {
+            db.Entry(experience).State = EntityState.Modified;
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        public ActionResult Delete(int id)
+        {
+            var thisExperience = db.Experiences.FirstOrDefault(experiences => experiences.ExperienceId == id);
+            return View(thisExperience);
+        }
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var thisExperience = db.Experiences.FirstOrDefault(experiences => experiences.ExperienceId == id);
+            db.Experiences.Remove(thisExperience);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
     }
 }

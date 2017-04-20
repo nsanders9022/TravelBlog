@@ -50,7 +50,7 @@ namespace TravelBlog.Models
                .HasForeignKey(pt => pt.PeopleId);
 
 
-
+            
             //base.OnModelCreating(modelbuilder);
             //modelbuilder.Entity<ExperiencePeople>().HasKey(x => new
             //{ x.ExperienceId, x.PeopleId });
