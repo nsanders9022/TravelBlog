@@ -10,10 +10,10 @@ namespace TravelBlog.Models
 {
     public class TravelDbContext : IdentityDbContext<ApplicationUser>
     {
-        public TravelDbContext(DbContextOptions options) : base(options)
-        {
+        //public TravelDbContext(DbContextOptions options) : base(options)
+        //{
 
-        }
+        //}
 
         public TravelDbContext()
         {
