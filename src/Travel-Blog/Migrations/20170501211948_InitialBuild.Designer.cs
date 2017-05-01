@@ -8,8 +8,8 @@ using TravelBlog.Models;
 namespace TravelBlog.Migrations
 {
     [DbContext(typeof(TravelDbContext))]
-    [Migration("20170501203620_Authentication")]
-    partial class Authentication
+    [Migration("20170501211948_InitialBuild")]
+    partial class InitialBuild
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

@@ -41,5 +41,22 @@ namespace TravelBlog.Tests
             //Assert
             Assert.IsType<List<Suggestion>>(result);
         }
+
+        [Fact]
+        public void Post_MethodAddsItem_Test()
+        {
+            // Arrange
+            SuggestionsController controller = new SuggestionsController();
+            Suggestion testSuggestion = new Suggestion();
+            testSuggestion.Description = "test suggestion";
+
+            // Act
+            controller.Create(testSuggestion);
+            ViewResult indexView = new SuggestionsController().Index() as ViewResult;
+            var collection = indexView.ViewData.Model as IEnumerable<Suggestion>;
+
+            // Assert
+            Assert.Contains<Suggestion>(testSuggestion, collection);
+        }
     }
 }
