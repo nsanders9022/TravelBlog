@@ -12,7 +12,6 @@ namespace TravelBlog.Tests
     public class SuggestionsControllerTest
     {
         //Tests that Index is returned correctly from Controller
-
         [Fact]
         public void Get_ViewResult_Index_Test()
         {
@@ -27,7 +26,6 @@ namespace TravelBlog.Tests
         }
 
         //Tests that index returns list of Suggestion types
-
         [Fact]
         public void Get_ModelList_Index_Test()
         {

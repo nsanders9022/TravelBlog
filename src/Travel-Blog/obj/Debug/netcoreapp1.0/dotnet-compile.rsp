@@ -202,6 +202,7 @@
 --resource:"C:\Users\Nicole Laptop\Desktop\TravelBlog\src\Travel-Blog\obj\Debug\netcoreapp1.0\Travel-Blogdotnet-compile.deps.json",Travel-Blog.deps.json
 C:\Users\Nicole Laptop\Desktop\TravelBlog\src\Travel-Blog\Program.cs
 C:\Users\Nicole Laptop\Desktop\TravelBlog\src\Travel-Blog\Startup.cs
+C:\Users\Nicole Laptop\Desktop\TravelBlog\src\Travel-Blog\Controllers\AccountController.cs
 C:\Users\Nicole Laptop\Desktop\TravelBlog\src\Travel-Blog\Controllers\ExperiencesController.cs
 C:\Users\Nicole Laptop\Desktop\TravelBlog\src\Travel-Blog\Controllers\ExperiencesPeoplesController.cs
 C:\Users\Nicole Laptop\Desktop\TravelBlog\src\Travel-Blog\Controllers\HomeController.cs
@@ -226,3 +227,5 @@ C:\Users\Nicole Laptop\Desktop\TravelBlog\src\Travel-Blog\Models\People.cs
 C:\Users\Nicole Laptop\Desktop\TravelBlog\src\Travel-Blog\Models\Place.cs
 C:\Users\Nicole Laptop\Desktop\TravelBlog\src\Travel-Blog\Models\Suggestion.cs
 C:\Users\Nicole Laptop\Desktop\TravelBlog\src\Travel-Blog\Models\TravelDbContext.cs
+C:\Users\Nicole Laptop\Desktop\TravelBlog\src\Travel-Blog\ViewModel\LoginViewModel.cs
+C:\Users\Nicole Laptop\Desktop\TravelBlog\src\Travel-Blog\ViewModel\RegisterViewModel.cs
