@@ -1,9 +1,10 @@
-﻿{
+{
   "dependencies": {
-    "NETStandard.Library": "1.6.0",
-    "xunit": "2.1.0",
     "dotnet-test-xunit": "2.2.0-beta2-build3300",
-    "Travel-Blog": "1.0.0-*"
+    "Microsoft.AspNetCore.Mvc.Abstractions": "1.1.1",
+    "NETStandard.Library": "1.6.1",
+    "TravelBlog": "1.0.0-*",
+    "xunit": "2.1.0"
   },
   "frameworks": {
     "netcoreapp1.0": {
