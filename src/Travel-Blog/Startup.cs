@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using TravelBlog.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 
 namespace TravelBlog
@@ -24,16 +25,18 @@ namespace TravelBlog
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-
             services.AddEntityFramework()
                 .AddDbContext<TravelDbContext>(options =>
                     options.UseSqlServer(Configuration["ConnectionStrings:DefaultConnection"]));
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<TravelDbContext>()
+                .AddDefaultTokenProviders();
         }
 
 
         public void Configure(IApplicationBuilder app)
         {
-
+            app.UseIdentity();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

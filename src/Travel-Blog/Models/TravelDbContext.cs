@@ -4,12 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
-
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace TravelBlog.Models
 {
-    public class TravelDbContext : DbContext
+    public class TravelDbContext : IdentityDbContext<ApplicationUser>
     {
+        public TravelDbContext(DbContextOptions options) : base(options)
+        {
+
+        }
+
         public TravelDbContext()
         {
 
@@ -50,10 +55,10 @@ namespace TravelBlog.Models
                .HasOne(pt => pt.People)
                .WithMany(p => p.ExperiencesPeoples)
                .HasForeignKey(pt => pt.PeopleId);
+                       
+            base.OnModelCreating(modelBuilder);
 
 
-            
-            //base.OnModelCreating(modelbuilder);
             //modelbuilder.Entity<ExperiencePeople>().HasKey(x => new
             //{ x.ExperienceId, x.PeopleId });
         }
