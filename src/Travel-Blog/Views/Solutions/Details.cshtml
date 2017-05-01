@@ -1,0 +1,17 @@
+﻿@model TravelBlog.Models.Suggestion
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Travel Blog</title>
+</head>
+<body>
+    <h2>Details</h2>
+    <hr />
+    <p><strong>City:</strong> @Html.DisplayFor(model => model.SuggestedCity)</p>
+     <p><strong>Country:</strong> @Html.DisplayFor(model => model.SuggestedCountry)</p>
+    <p><strong>@Html.DisplayNameFor(model => model.Description): </strong>@Html.DisplayFor(model => model.Description)</p>
+
+    <p>@Html.ActionLink("Back to Suggestions list", "Index")</p>
+
+</body>
+</html>

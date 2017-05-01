@@ -1,0 +1,26 @@
+﻿@model TravelBlog.Models.Suggestion
+
+<html>
+<head>
+    <title>Suggestion - Create</title>
+</head>
+<body>
+    <h2>Create</h2>
+    <hr />
+    <h4>Add a new suggestion</h4>
+    @using (Html.BeginForm())
+    {
+        @Html.LabelFor(model => model.SuggestedCity)
+        @Html.TextBoxFor(model => model.SuggestedCity)
+
+        @Html.LabelFor(model => model.SuggestedCountry)
+        @Html.TextBoxFor(model => model.SuggestedCountry)
+
+        @Html.LabelFor(model => model.Description)
+        @Html.TextBoxFor(model => model.Description)
+
+        <input type="submit" value="Add new place" />
+    }
+    <p>@Html.ActionLink("Back to list", "Index")</p>
+</body>
+</html>

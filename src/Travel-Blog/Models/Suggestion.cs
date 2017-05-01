@@ -14,10 +14,8 @@ namespace TravelBlog.Models
     {
         [Key]
         public int SuggestionId { get; set; }
+        public string SuggestedCity { get; set; }
+        public string SuggestedCountry { get; set; }
         public string Description { get; set; }
-        public int PlaceId { get; set; }
-        public virtual Place Place { get; set; }
-
-
     }
 }

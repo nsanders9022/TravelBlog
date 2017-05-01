@@ -1,5 +1,23 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model IEnumerable<TravelBlog.Models.Suggestion>
+
+<html>
+<head>
+    <title>Travel Blog</title>
+</head>
+<body>
+    <h2>Travel Blog Suggestions</h2>
+    <h4>Suggestions</h4>
+    <ul>
+        @foreach (var listSuggestion in Model)
+        {
+            <li>@Html.DisplayFor(modelSuggestion => listSuggestion.SuggestedCity) | 
+                @Html.ActionLink("Details", "Details", new { id = listSuggestion.SuggestionId }) |
+                @*@Html.ActionLink("Edit", "Edit", new { id = listSuggestion.SuggestionId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = listSuggestion.SuggestionId })*@
+            </li>
+        }
+    </ul>
+
+    <p>@Html.ActionLink("Add new suggestion", "Create")</p>
+</body>
+</html>
