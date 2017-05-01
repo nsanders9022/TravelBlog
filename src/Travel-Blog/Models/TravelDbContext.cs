@@ -10,10 +10,7 @@ namespace TravelBlog.Models
 {
     public class TravelDbContext : IdentityDbContext<ApplicationUser>
     {
-        //public TravelDbContext(DbContextOptions options) : base(options)
-        //{
-
-        //}
+        
 
         public TravelDbContext()
         {
@@ -37,7 +34,7 @@ namespace TravelBlog.Models
 
         public TravelDbContext(DbContextOptions<TravelDbContext> options)
             :base(options)
-            {
+        {
 
         }
 
@@ -56,7 +53,7 @@ namespace TravelBlog.Models
                .WithMany(p => p.ExperiencesPeoples)
                .HasForeignKey(pt => pt.PeopleId);
                        
-            base.OnModelCreating(modelBuilder);
+            //base.OnModelCreating(modelBuilder);
 
 
             //modelbuilder.Entity<ExperiencePeople>().HasKey(x => new
