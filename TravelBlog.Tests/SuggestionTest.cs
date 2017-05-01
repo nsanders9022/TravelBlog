@@ -9,9 +9,9 @@ namespace TravelBlog.Tests
 {
     public class SuggestionTest
     {
-        public SuggestionTest()
-        {
-        }
+        //public SuggestionTest()
+        //{
+        //}
 
         [Fact]
         public void GetDescriptionTest()
